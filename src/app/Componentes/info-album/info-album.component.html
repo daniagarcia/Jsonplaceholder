@@ -1,0 +1,15 @@
+<div *ngFor="let albumfotos of albumesarray" class="w3-third w3-container w3-margin-bottom" style="left:300px">
+  <div  class="" >
+    <p > 
+      <b> {{albumfotos.albumId}}</b>  <br>
+      <b> {{albumfotos.id}}</b><br>
+      <b> {{albumfotos.title}}</b> <br>
+      <img src="{{albumfotos.url}}" alt="Norway" style="width:100%" class="w3-hover-opacity"><br><br>
+      <img src="{{albumfotos.thumbnailUrl}}" alt="Norway" style="width:100%" class="w3-hover-opacity"><br>
+  
+<button [routerLink]="['/albumes',albumfotos.id ]" >algo</button>
+    </p>
+   
+  </div>  
+</div>
+

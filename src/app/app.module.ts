@@ -10,13 +10,17 @@ import { AlbumesComponent } from './Componentes/albumes/albumes.component';
 import { FotosComponent } from './Componentes/fotos/fotos.component';
 import { TodosComponent } from './Componentes/todos/todos.component';
 import { PostsComponent } from './Componentes/posts/posts.component';
+import { InfoAlbumComponent } from './Componentes/info-album/info-album.component';
+import { InfoPostsComponent } from './Componentes/info-posts/info-posts.component';
 
 const router :Routes =[
   {path:"posts", component:PostsComponent},
   {path:"comentario", component:ComentariosComponent},
   {path:"albumes", component:AlbumesComponent},
   {path:"fotos", component:FotosComponent},
-  {path:"todos",component:TodosComponent}
+  {path:"todos",component:TodosComponent},
+  {path:"post/:id",component:PostsComponent},
+  {path:"albumes/:id",component:InfoAlbumComponent}
 ]
 
 
@@ -29,7 +33,9 @@ const router :Routes =[
     AlbumesComponent,
     FotosComponent,
     TodosComponent,
-    PostsComponent
+    PostsComponent,
+    InfoAlbumComponent,
+    InfoPostsComponent
   ],
   imports: [
     BrowserModule,

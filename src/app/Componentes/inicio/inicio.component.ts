@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Users } from '../modules/Users';
-import { Posts } from '../modules/Posts';
+import { Users } from '../../modules/Users';
+import { Posts } from '../../modules/Posts';
 import { Http } from '@angular/http';
 
 @Component({

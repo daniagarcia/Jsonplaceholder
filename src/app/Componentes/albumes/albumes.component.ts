@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Albums } from '../modules/Albums';
+import { Albums } from '../../modules/Albums';
 import { ActivatedRoute } from '@angular/router';
 import { Http } from '@angular/http';
 

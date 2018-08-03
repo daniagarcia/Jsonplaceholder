@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Todos } from '../modules/Todos';
+import { Todos } from '../../modules/Todos';
 import { ActivatedRoute } from '@angular/router';
 import { Http } from '@angular/http';
 
