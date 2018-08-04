@@ -1,14 +1,28 @@
-<div *ngFor="let post of Posts; index as i" class="  w3-third w3-container w3-margin-bottom"  >
+
+<form (submit)="AgregarPost($event)">
+<div class="w3-main" style="margin-left:450px">
+  <label>Title:</label>
+  <input class="w3-input w3-border" type="text" id="titulo" style="width: 400px">
+  <label>Body:</label>
+  <input class="w3-input w3-border" type="text" id="bodys" style="width: 400px">
+  <br>
+  <button class="w3-button w3-black">POST</button>
+</div>
+</form>
+
+<div *ngFor="let post of _Posts; index as i" class="  w3-third w3-container w3-margin-bottom">
   <img src="" alt="" style="width:100%" class="w3-hover-opacity">
-  <div class="w3-main" style="margin-left:300px">
-      <p> 
-          <b>{{i}}</b><br>
-          <!-- <b>{{post.id}}</b><br>             -->
-          <b>{{post.title}}</b><br>        
-          <b>{{post.body}}</b><br>            
-        </p>
-        <button [routerLink]="['/comentarios',post.id ]" class="w3-button w3-black">Mostrar mas</button>
-    
+  <div class="w3-main">
+      <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+          <li class="w3-teal w3-xlarge w3-padding-32"></li>
+          <li class="w3-padding-16">{{i}}</li>
+          <li class="w3-padding-16">{{post.title}}</li>
+          <li class="w3-padding-16">{{post.body}}</li>
+          
+          <li class="w3-light-grey w3-padding-24">
+              <button [routerLink]="['/comentarios',post.id ]" class="w3-button w3-black">Mostrar mas</button>
+          </li>
+        </ul>
   </div>
- 
+
 </div>

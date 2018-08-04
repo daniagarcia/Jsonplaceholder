@@ -14,6 +14,11 @@ import { InfoAlbumComponent } from './Componentes/info-album/info-album.componen
 import { InfoPostsComponent } from './Componentes/info-posts/info-posts.component';
 import { UsersComponent } from './Componentes/users/users.component';
 import { InfoUsersComponent } from './Componentes/info-users/info-users.component';
+import { PostsUsersComponent } from './Componentes/posts-users/posts-users.component';
+import { ComentariosPostComponent } from './Componentes/comentarios-post/comentarios-post.component';
+import { FotosAlbumComponent } from './Componentes/fotos-album/fotos-album.component';
+import { AlbumUsersComponent } from './Componentes/album-users/album-users.component';
+import { TodosUserComponent } from './Componentes/todos-user/todos-user.component';
 
 const router :Routes =[
   {path:"posts", component:PostsComponent},
@@ -25,7 +30,13 @@ const router :Routes =[
   {path:"albumes/:id",component:InfoAlbumComponent},
   {path:"comentarios/:id",component:InfoPostsComponent},
   {path:"users",component:UsersComponent},
-  {path:"users/:id",component:InfoUsersComponent}
+  {path:"users/:id",component:InfoUsersComponent},
+  {path:"userspost/:id",component:PostsUsersComponent},
+  {path:"postscomments/:id",component:ComentariosPostComponent},
+  {path:"useralbum/:id",component:AlbumUsersComponent},
+  {path:"fotosalbum/:id",component:FotosAlbumComponent},
+  {path:"todosuser/:id",component:TodosUserComponent},
+
 ]
 
 
@@ -42,7 +53,12 @@ const router :Routes =[
     InfoAlbumComponent,
     InfoPostsComponent,
     UsersComponent,
-    InfoUsersComponent
+    InfoUsersComponent,
+    PostsUsersComponent,
+    ComentariosPostComponent,
+    FotosAlbumComponent,
+    AlbumUsersComponent,
+    TodosUserComponent
   ],
   imports: [
     BrowserModule,

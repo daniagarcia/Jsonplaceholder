@@ -1,17 +1,38 @@
 <div *ngFor="let infousers of Users;" class="  w3-third w3-container w3-margin-bottom"  >
     <img src="" alt="" style="width:100%" class="w3-hover-opacity">
-    <div class="w3-main" style="margin-left:300px">
-        <p> 
-            <b>{{infousers.id}}</b><br>
-            <b>{{infousers.name}}</b><br>            
-            <b>{{infousers.username}}</b><br>        
-            <b>{{infousers.email}}</b><br>    
-            <!-- <b>{{infousers.address}}</b><br>              -->
-          </p>
+    <!-- <div class="w3-third w3-margin-bottom" style="margin-left:300px"> -->
+           
 
-          <button [routerLink]="['/users',infousers.id ]" class="w3-button w3-black">Mostrar mas</button>
-      
-    </div>
+          <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+            <li class="w3-teal w3-xlarge w3-padding-32"></li>
+            <li class="w3-padding-16">{{infousers.id}}</li>
+            <li class="w3-padding-16">{{infousers.name}}</li>
+            <li class="w3-padding-16">{{infousers.username}}</li>
+            <li class="w3-padding-16">{{infousers.email}}</li>
+            <li class="w3-light-grey w3-padding-24">
+              <button [routerLink]="['/users',infousers.id ]" class="w3-button w3-black">Mostrar mas</button> <br><br>
+              <button [routerLink]="['/userspost',infousers.id]" class="w3-button w3-black">Ver todos los posts</button><br><br>
+              <button [routerLink]="['/useralbum',infousers.id ]" class="w3-button w3-black">Ver todos los albumes</button><br><br>
+              <button [routerLink]="['/todosuser',infousers.id ]" class="w3-button w3-black">Ver TODOS</button><br>
+            </li>
+          </ul>
+
    
   </div>
-  
+<!-- 
+  <div class="w3-third w3-margin-bottom">
+    <ul class="w3-ul w3-border w3-white w3-center w3-opacity w3-hover-opacity-off">
+      <li class="w3-teal w3-xlarge w3-padding-32">Pro</li>
+      <li class="w3-padding-16">Web Design</li>
+      <li class="w3-padding-16">Photography</li>
+      <li class="w3-padding-16">50GB Storage</li>
+      <li class="w3-padding-16">Endless Support</li>
+      <li class="w3-padding-16">
+        <h2>$ 25</h2>
+        <span class="w3-opacity">per month</span>
+      </li>
+      <li class="w3-light-grey w3-padding-24">
+        <button class="w3-button w3-teal w3-padding-large w3-hover-black">Sign Up</button>
+      </li>
+    </ul>
+  </div> -->

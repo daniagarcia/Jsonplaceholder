@@ -1,0 +1,12 @@
+<div *ngFor="let fotos of fotosAlbum" class="w3-third w3-container w3-margin-bottom">
+  <div class="w3-main" style="margin-left:300px">
+      <p> 
+          <b>{{fotos.albumId}}</b>  <br>
+          <b>{{fotos.id}}</b> <br>     
+          <b>{{fotos.title}}</b><br>
+          <img src="{{fotos.url}}" alt="Norway" style="width:100%" class="w3-hover-opacity"><br><br>
+      <img src="{{fotos.thumbnailUrl}}" alt="Norway" style="width:100%" class="w3-hover-opacity"><br>              
+        </p>
+        
+  </div>
+</div>

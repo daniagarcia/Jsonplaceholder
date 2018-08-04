@@ -1,0 +1,12 @@
+<div *ngFor="let postuser of postUsers" class="w3-third w3-container w3-margin-bottom">
+  <div class="w3-main" style="margin-left:300px">
+      <p> 
+          <b>{{postuser.userId}}</b>  <br>
+          <b>{{postuser.id}}</b>        <br>     
+          <b>{{postuser.title}}</b><br>
+          <b>{{postuser.body}}</b>                
+        </p>
+        <button [routerLink]="['/postscomments',postuser.id]" class="w3-button w3-black">Ver todos los comentarios</button><br><br>
+  </div>
+</div>
+
