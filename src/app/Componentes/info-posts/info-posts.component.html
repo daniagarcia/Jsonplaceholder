@@ -1,3 +1,13 @@
-<p>
-  info-posts works!
-</p>
+<div *ngFor="let postarray of postsarray" class="w3-third w3-container w3-margin-bottom">
+  <div class="w3-main" style="margin-left:300px">
+      <p> 
+          <b>{{postarray.postId}}</b>  <br>
+          <b>{{postarray.id}}</b>        <br>     
+          <b>{{postarray.name}}</b><br>
+          <b>{{postarray.email}}</b> <br>
+          <b>{{postarray.body}}</b>                
+        </p>
+      
+  </div>
+</div>
+

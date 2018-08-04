@@ -12,6 +12,8 @@ import { TodosComponent } from './Componentes/todos/todos.component';
 import { PostsComponent } from './Componentes/posts/posts.component';
 import { InfoAlbumComponent } from './Componentes/info-album/info-album.component';
 import { InfoPostsComponent } from './Componentes/info-posts/info-posts.component';
+import { UsersComponent } from './Componentes/users/users.component';
+import { InfoUsersComponent } from './Componentes/info-users/info-users.component';
 
 const router :Routes =[
   {path:"posts", component:PostsComponent},
@@ -20,7 +22,10 @@ const router :Routes =[
   {path:"fotos", component:FotosComponent},
   {path:"todos",component:TodosComponent},
   {path:"post/:id",component:PostsComponent},
-  {path:"albumes/:id",component:InfoAlbumComponent}
+  {path:"albumes/:id",component:InfoAlbumComponent},
+  {path:"comentarios/:id",component:InfoPostsComponent},
+  {path:"users",component:UsersComponent},
+  {path:"users/:id",component:InfoUsersComponent}
 ]
 
 
@@ -35,7 +40,9 @@ const router :Routes =[
     TodosComponent,
     PostsComponent,
     InfoAlbumComponent,
-    InfoPostsComponent
+    InfoPostsComponent,
+    UsersComponent,
+    InfoUsersComponent
   ],
   imports: [
     BrowserModule,

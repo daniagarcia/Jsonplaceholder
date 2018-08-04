@@ -13,6 +13,8 @@ import { Comments } from '../../modules/Comments';
 
 export class ComentariosComponent implements OnInit {
   Comments: Array<Comments>;
+
+  
   identificador:number;
 
   constructor(private ruta:ActivatedRoute, private http:Http) {

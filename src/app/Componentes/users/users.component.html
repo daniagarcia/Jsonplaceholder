@@ -1,3 +1,17 @@
-<p>
-  users works!
-</p>
+<div *ngFor="let infousers of Users;" class="  w3-third w3-container w3-margin-bottom"  >
+    <img src="" alt="" style="width:100%" class="w3-hover-opacity">
+    <div class="w3-main" style="margin-left:300px">
+        <p> 
+            <b>{{infousers.id}}</b><br>
+            <b>{{infousers.name}}</b><br>            
+            <b>{{infousers.username}}</b><br>        
+            <b>{{infousers.email}}</b><br>    
+            <!-- <b>{{infousers.address}}</b><br>              -->
+          </p>
+
+          <button [routerLink]="['/users',infousers.id ]" class="w3-button w3-black">Mostrar mas</button>
+      
+    </div>
+   
+  </div>
+  

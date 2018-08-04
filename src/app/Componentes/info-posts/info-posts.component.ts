@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Http } from '@angular/http';
 import { Posts } from '../../modules/Posts';
+import { Comments } from '../../modules/Comments';
 
 @Component({
   selector: 'app-info-posts',
@@ -9,7 +10,7 @@ import { Posts } from '../../modules/Posts';
   styleUrls: ['./info-posts.component.css']
 })
 export class InfoPostsComponent implements OnInit {
-  postsarray:Array<Posts>;
+  postsarray:Array<Comments>;
   numpost:number;
   constructor(private ruta:ActivatedRoute, private http:Http) { 
     this.ruta.params.subscribe(params => this.numpost = params["id"]); 
